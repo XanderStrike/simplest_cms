@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Simplest Setup</h1>
+  <form action="/update">
+    <div class="form-row">New Password<input name="newpassword" type="password"></div>
+    {% include "_field.html" %}
+    <input type="submit" value="Save">
+  </form>
+{% endblock %}
